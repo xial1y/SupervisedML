@@ -9,7 +9,7 @@
 2. Handling missing values in the Tenure column by filling them with the mean value
 3. One-Hot Encoding (OHE) categorical columns (Geography and Gender)
 
-**Model Development:** 4 ML models were created and trained <br>
+**Model Development:** ML models were created and trained <br>
 1. Logistic Regression: A basic logistic regression model was trained using the training set and validated on the validation set. The F1 score was 0.4916 and the AUC-ROC score was 0.7537.
 2. Logistic Regression with Upsampling: The minority class (clients who have exited) was upsampled to balance the classes. The F1 score was 0.4512 and the AUC-ROC score was 0.7203.
 3. Logistic Regression with Downsampling: The majority class (clients who have not exited) was downsampled to balance the classes. The F1 score was 0.4601 and the AUC-ROC score was 0.7153.
