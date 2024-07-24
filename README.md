@@ -14,11 +14,15 @@
 2. Logistic Regression with Upsampling: The minority class (clients who have exited) was upsampled to balance the classes. The F1 score was 0.4512 and the AUC-ROC score was 0.7203.
 3. Logistic Regression with Downsampling: The majority class (clients who have not exited) was downsampled to balance the classes. The F1 score was 0.4601 and the AUC-ROC score was 0.7153.
 4. Random Forest Classifier: A random forest classifier model was trained using the training set and validated on the validation set. The F1 score was 0.6246 and the AUC-ROC score was 0.8496.
+5. Random Forest Classifier with Upsampling: The minority class (clients who have exited) was upsampled to balance the classes.  The F1 score was 0.6258 and the AUC-ROC score was 0.8479. 
+6. Random Forest Classifier with Downsampling: The majority class (clients who have not exited) was downsampled to balance the classes. The F1 score was 0.6135 and the AUC-ROC score was 0.8510.
+7. Decision Tree Classifier: A Decision Tree Classifier model was trained using the training set and evaluated on the validation set. The F1 score was 0.5551 and the  AUC-ROC score was 0.8126. 
+8. Decision Tree Classifier with Upsampling: The minority class (clients who have exited) was upsampled to balance the classes. The F1 score was 0.5474 and the AUC-ROC score was 0.7859.
+9. Decision Tree Classifier with Downsampling:  The majority class (clients who have not exited) was downsampled to balance the classes. The F1 score was 0.5764 and the AUC-ROC score was 0.8121.
 
-**Results:** <br> The best-performing model, and the only one that achieved the projects metric criteria, is the Random Forest Classifier with an F1 score of 0.6246 and an AUC-ROC score of 0.8496.
+**Results:** <br> The best-performing model s the Random Forest Classifier with upsampling. The model was tested with testing dataset and achieved an F1 score of 0.62 and AUC-ROC score of 0.86. 
 
-**Conclusion:** <br> This project demonstrates the importance of preprocessing and feature engineering in machine learning modeling. The Random Forest Classifier model achieved a high F1 score and AUC-ROC score, indicating its effectiveness in predicting customer churn at Beta Bank. Future work could involve further tuning hyperparameters and exploring other machine learning models to improve performance. <br>
+**Conclusion:** <br> Beta Bank should employ an RandomForestClassifier with upsampling, if the data has class imbalance, model for client churn prediction. It produces the highest F1 score and good AUC-ROC meaning the model is pretty good at predicting if a client will leave while minimizing false positives (indicating a client will leave but actually stay).
 
 
 
-**NOTE:** please review project notebook for additional details  
